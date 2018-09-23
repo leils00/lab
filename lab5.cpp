@@ -50,7 +50,7 @@ int main(){
                     ++frame;
                     roll = 1;
                 } else { // in frame 10, even the roll 1 is 10 pins, still have to play roll 2
-                    roll = 2; // the first roll is not 10 pins, bump up roll number
+                    roll = 2; // bump the roll to roll 2
                 }
 
             }else{
