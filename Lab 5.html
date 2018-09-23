@@ -1,0 +1,1090 @@
+
+<!DOCTYPE html>
+<html class="scripts-not-loaded" dir="ltr"   lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5</title>
+  <!--[if lte IE 9]> <meta http-equiv=refresh content="0; URL=/ie-9-is-not-supported.html" /> <![endif]-->
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/latin/LatoLatin-Regular-3cd3657802.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" />
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" />
+  
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/b4cf24ea5f2824fe473a9e5238bccd2f/variables-750d72b9d3e5d522f965bf904110c132.css" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-2ddc5689a4.css" />
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/dist/ie11-polyfill-9f640d24ea.js");
+  }
+  window.fetch || get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/lato-fontfaceobserver-ed903d58c4.js" async="async"></script>
+  
+  <meta name="apple-itunes-app" content="app-id=480883488" />
+<link rel="manifest" href="/web-app-manifest/manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-0e191b779e.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-cfde159ef1.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-7cf8ca4f6c.css" />
+  
+  
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/b4cf24ea5f2824fe473a9e5238bccd2f/variables-750d72b9d3e5d522f965bf904110c132.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/vendor.bundle-0d87e131da.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/New_York-c3226761e3.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/appBootstrap.bundle-56f81dd4c0.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/common.bundle-1f006d4d0b.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/assignment_show.bundle-d9c22137c3.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/submit_assignment.bundle-7c27dd5686.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/edit_rubric.bundle-1da8cdad5c.js" defer="defer"></script>
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-transitions context-course_57810 lato-font-not-loaded-yet">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://utk.instructure.com/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" href="/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="https://utk.instructure.com/images/messages/avatar-50.png" alt="Leila Lin" />
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://utk.instructure.com/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z" /></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" href="/courses" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Courses
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"/></svg>
+
+                <span class="menu-item__badge" style="display: none">0</span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+      <li id="context_external_tool_1509_menu_item" class="menu-item ic-app-header__menu-list-item">
+        <a class='ic-app-header__menu-list-link' href="/accounts/1/external_tools/1509?launch_type=global_navigation">
+            <svg version="1.1" class="ic-icon-svg ic-icon-svg--lti menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+              <path d="M32,15.6655048 C33.4133667,18.570766 35.1996806,21.2316327 37.3050045,23.6338337 C35.753956,26.1002552 33.9885783,28.4007739 32,30.5086313 C30.0110669,28.4007739 28.2456891,26.1002552 26.6946407,23.6338337 C28.7999645,21.2316327 30.5866333,18.570766 32,15.6655048 L32,15.6655048 Z M0,52 C12.0837002,52 23.1865955,47.7796471 32,40.7703433 C40.8130496,47.7796471 51.915945,52 64,52 L64,44.458737 C54.1025294,44.458737 45.0506659,41.0546971 37.6744031,35.5092626 C39.6005278,33.4442188 41.3925193,31.252518 42.9669879,28.8934874 C48.8833986,33.2619041 56.1134632,35.9263386 64,35.9263386 L64,28.3850756 C57.4406015,28.3850756 51.474157,26.0296128 46.6755231,22.2402503 C44.5315206,20.5473283 42.600428,18.6057304 41.0188625,16.368005 C37.7425343,11.7320032 35.7724082,6.10557949 35.7724082,0 L28.2272369,0 C28.2272369,6.10557949 26.2571109,11.7320032 22.9807827,16.368005 C21.3992171,18.6057304 19.4681245,20.5473283 17.324122,22.2402503 C12.5254882,26.0296128 6.55904368,28.3850756 0,28.3850756 L0,35.9263386 C7.88618193,35.9263386 15.1162466,33.2619041 21.0330121,28.8934874 C22.6074807,31.252518 24.3994722,33.4442188 26.325242,35.5092626 C18.9489793,41.0546971 9.89747059,44.458737 0,44.458737 L0,52 L0,52 Z"/>
+            </svg>
+          <div class="menu-item__text">
+            Arc
+          </div>
+        </a>
+      </li>
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button
+              id="primaryNavToggle"
+              class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+              aria-label="Expand global navigation
+                "
+              title="Expand global navigation
+                "
+            >
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"/>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/57810"><span class="ellipsible">Computer Science 102</span></a></li><li><a href="/courses/57810/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://utk.instructure.com/courses/57810/assignments/311477"><span class="ellipsible">Lab 5</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side"
+          class="ic-app-course-menu list-view"
+          style="display: block"
+          >
+              <span id="section-tabs-header-subtitle" class="ellipsis">Fall Sem 2018</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="/courses/57810" title="Home" class="home">Home</a></li><li class="section"><a href="/courses/57810/announcements" title="Announcements" class="announcements">Announcements</a></li><li class="section"><a href="/courses/57810/assignments/syllabus" title="Syllabus" class="syllabus">Syllabus</a></li><li class="section"><a href="/courses/57810/external_tools/349" title="Piazza" class="context_external_tool_349">Piazza</a></li><li class="section"><a href="/courses/57810/wiki" title="Pages" class="pages">Pages</a></li><li class="section"><a href="/courses/57810/files" title="Files" class="files">Files</a></li><li class="section"><a href="/courses/57810/grades" title="Grades" class="grades">Grades</a></li><li class="section"><a href="/courses/57810/external_tools/626" title="myUTK" class="context_external_tool_626">myUTK</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+            
+
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class='assignment-title'>
+      <div class='title-content'>
+        <h1 class="title">
+          Lab 5
+        </h1>
+      </div>
+      <div class='assignment-buttons'>
+        
+
+        <a role="button" class="Button Button--primary submit_assignment_link " href="#">Submit Assignment</a>
+      </div>
+    </div>
+    <ul class='student-assignment-overview'>
+      <li>
+        <span class='title'>Due</span>
+        <span class='value'>
+          <span class="date_text">
+                <span class="display_date">Wednesday</span> by 
+                <span class="display_time"> 7am</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class='title'>Points</span>
+        <span class='value'>100</span>
+      </li>
+        <li>
+          <span class='title'>Submitting</span>
+          <span class='value'>a file upload</span>
+        </li>
+          <li>
+            <span class='title'>File Types</span>
+            <span class='value'>cpp</span>
+          </li>
+      
+  <li>
+    <span class="title">Available</span>
+    <span class="value">
+        Sep 18 at 7:58am - Sep 26 at 7am
+        <span style="font-size: 0.8em;">8 days</span>
+    </span>
+  </li>
+
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version"><h2><span style="text-decoration: underline;">Assignment</span></h2>
+<p>You will be writing a program to score bowling for several players. Your job will be to ask for players and their scores, then add up their score. When all players have been entered, the user will type "done". Then, your program will tally up the worst and best player and output who won and who lost the game.</p>
+<h2><span style="text-decoration: underline;">Restrictions / Hints</span></h2>
+<p>1. You must use a <strong>vector</strong> to store all of the player names. All player names will be a single name.</p>
+<p>2. You must use another <strong>vector</strong> to store the total score for each player. You must calculate the total score for each player after all rolls have been entered.</p>
+<p>3. You must use an <strong>array</strong> to store each roll's value.</p>
+<p>4. The number of rolls is variable depending on whether the player threw a strike (knocked down 10 pins in one roll), spare, or neither. Please see "Scoring Bowling" below.</p>
+<p>5. You must use a for loop to input the roll values into the array.</p>
+<p>6. If the user types "done" before entering any names, output "No players were entered."</p>
+<p>7. In the event of a tie, the first player to obtain the best or worst score should be printed.</p>
+<p>8. You can assume that the user will input valid scores. You do not need to perform error checking for invalid input.</p>
+<h2><span style="text-decoration: underline;">Scoring Bowling</span></h2>
+<p>Please see: <a href="https://www.wikihow.com/Score-Bowling">https://www.wikihow.com/Score-Bowling</a></p>
+<h2><span style="text-decoration: underline;">Examples</span></h2>
+<pre>Enter player's name (done for no more players): John
+Enter score for frame 1, roll 1: 10
+Enter score for frame 2, roll 1: 10
+Enter score for frame 3, roll 1: 10
+Enter score for frame 4, roll 1: 10
+Enter score for frame 5, roll 1: 10
+Enter score for frame 6, roll 1: 10
+Enter score for frame 7, roll 1: 10
+Enter score for frame 8, roll 1: 10
+Enter score for frame 9, roll 1: 10
+Enter score for frame 10, roll 1: 10
+Enter score for frame 10, roll 2: 10
+Enter score for frame 10, roll 3: 10
+Enter player's name (done for no more players): Cheryl
+Enter score for frame 1, roll 1: 8
+Enter score for frame 1, roll 2: 1
+Enter score for frame 2, roll 1: 0
+Enter score for frame 2, roll 2: 9
+Enter score for frame 3, roll 1: 2
+Enter score for frame 3, roll 2: 8
+Enter score for frame 4, roll 1: 10
+Enter score for frame 5, roll 1: 6
+Enter score for frame 5, roll 2: 3
+Enter score for frame 6, roll 1: 7
+Enter score for frame 6, roll 2: 0
+Enter score for frame 7, roll 1: 5
+Enter score for frame 7, roll 2: 2
+Enter score for frame 8, roll 1: 10
+Enter score for frame 9, roll 1: 0
+Enter score for frame 9, roll 2: 6
+Enter score for frame 10, roll 1: 2
+Enter score for frame 10, roll 2: 8
+Enter score for frame 10, roll 3: 10
+Enter player's name (done for no more players): done<br>
+John scored 300.
+Cheryl scored 122.
+Cheryl did the worst by scoring 122.
+John won the game by scoring 300.
+</pre>
+<pre>Enter player's name (done for no more players): done
+No players were entered.</pre>
+<pre>Enter player's name (done for no more players): John<br>Enter score for frame 1, roll 1: 8<br>Enter score for frame 1, roll 2: 1<br>Enter score for frame 2, roll 1: 0<br>Enter score for frame 2, roll 2: 9<br>Enter score for frame 3, roll 1: 2<br>Enter score for frame 3, roll 2: 8<br>Enter score for frame 4, roll 1: 10<br>Enter score for frame 5, roll 1: 6<br>Enter score for frame 5, roll 2: 3<br>Enter score for frame 6, roll 1: 7<br>Enter score for frame 6, roll 2: 0<br>Enter score for frame 7, roll 1: 5<br>Enter score for frame 7, roll 2: 2<br>Enter score for frame 8, roll 1: 10<br>Enter score for frame 9, roll 1: 0<br>Enter score for frame 9, roll 2: 6<br>Enter score for frame 10, roll 1: 2<br>Enter score for frame 10, roll 2: 8<br>Enter score for frame 10, roll 3: 10<br>Enter player's name (done for no more players): done<br><br>John scored 122.<br>John did the worst by scoring 122.<br>John won the game by scoring 122.</pre>
+<h2><span style="text-decoration: underline;"></span></h2>
+<h2><span style="text-decoration: underline;">Plagiarism</span></h2>
+<p>Please review the <a title="Syllabus" href="/courses/57810/assignments/syllabus">plagiarism policy on the syllabus</a>.</p>
+<h2><span style="text-decoration: underline;">Submission</span></h2>
+<p>Submit your lab5.cpp. This MUST compile, or it will not be graded.</p></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1537959600</span>
+    <span class="due_date_string">09/26/2018</span>
+    <span class="due_time_string">07:00am</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_57810" data-asset_string="assignment_311477">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="#submit_google_doc_form" class="submit_online_url_option">Google Doc</a></li>
+        <li><a href="#submit_from_external_tool_form_1509"
+          class="external-tool"
+          data-id="1509"
+          data-name="ARC">Arc</a></li>
+        <li><a href="#submit_from_external_tool_form_1299"
+          class="external-tool"
+          data-id="1299"
+          data-name="Google Apps">Google Drive</a></li>
+        <li><a href="#submit_from_external_tool_form_1300"
+          class="external-tool"
+          data-id="1300"
+          data-name="Microsoft Office 365">Office 365</a></li>
+    </ul>
+      
+<form id="submit_online_upload_form" class="submit_assignment_form" enctype="multipart/form-data" action="/courses/57810/assignments/311477/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="a8cE/SLRIvzF1qy8FYhfYxplrGbslHf/d/vbYxdQrcskqma+Q6ZNm43i/oVh0Q5WLxDjKq7kQ40hn4oAYRTYgg==" />
+    <input value="online_upload" type="hidden" name="submission[submission_type]" id="submission_submission_type" />
+    <input value="" id="submission_attachment_ids" type="hidden" name="submission[attachment_ids]" />
+    <input id="eula_agreement_timestamp" type="hidden" name="submission[eula_agreement_timestamp]" />
+    <table class="formtable" style="width: 100%;">
+      <tr>
+        <td colspan="2">
+          Upload a file, or choose a file you&#39;ve already uploaded.
+            
+        </td>
+      </tr><tr>
+        <td><label id="attachmentLabel" for="attachment_uploaded_data">File:</label></td>
+        <td>
+          <a href="#" class="add_another_file_link">
+            <i class="icon-add" aria-hidden="true"></i>
+            Add Another File
+          </a>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none;">
+            <input aria-labelledby="attachmentLabel" type="file" name="attachments[-1][uploaded_data]" class="input-file"/>
+            <a href="#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+              <div class='bad_ext_msg error_message' style="display: none">
+                This file type is not allowed. Accepted file types are: cpp
+              </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+        <a href="#" class="toggle_uploaded_files_link">Click here to find a file you&#39;ve already uploaded</a><br/>
+        <div id="uploaded_files" style="display: none;">
+          
+          
+<ul>
+    <li class="folder  folder folder_109364">
+      <span class="id" style="display: none;">109364</span>
+      <span class="text name">my files</span>
+        
+<ul>
+    <li class="folder  folder folder_300851">
+      <span class="id" style="display: none;">300851</span>
+      <span class="text name">Submissions</span>
+        
+<ul>
+    <li class="folder  folder folder_518613">
+      <span class="id" style="display: none;">518613</span>
+      <span class="text name">Fall 2018 Mathematics 141 Section 014 Calculus I</span>
+        
+<ul>
+    <li class="file  pdf file_2400999">
+      <span class="id" style="display: none;">2400999</span>
+      <span class="text name">leila_lin_section14_WP1.pdf</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_509035">
+      <span class="id" style="display: none;">509035</span>
+      <span class="text name">Fall 2018 Physics 135 Section 003 Intro Phys_Sci Math Majors I</span>
+        
+<ul>
+    <li class="file  doc file_2375160">
+      <span class="id" style="display: none;">2375160</span>
+      <span class="text name">leila lin_lab1.docx</span>
+    </li>
+    <li class="file  doc file_2413164">
+      <span class="id" style="display: none;">2413164</span>
+      <span class="text name">leila lin_lab2.docx</span>
+    </li>
+    <li class="file  doc file_2457074">
+      <span class="id" style="display: none;">2457074</span>
+      <span class="text name">leila lin_lab3.docx</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_506053">
+      <span class="id" style="display: none;">506053</span>
+      <span class="text name">Fall 2018 Cultural Studies in Education 200 Section 003 Survey_International Education</span>
+        
+<ul>
+    <li class="file  doc file_2369588">
+      <span class="id" style="display: none;">2369588</span>
+      <span class="text name">Leila Lin Educational Bio.docx</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_490944">
+      <span class="id" style="display: none;">490944</span>
+      <span class="text name">Fall 2018: Introduction to Computer Science</span>
+        
+<ul>
+    <li class="file  file file_2343227">
+      <span class="id" style="display: none;">2343227</span>
+      <span class="text name">lab1.cpp</span>
+    </li>
+    <li class="file  file file_2379665">
+      <span class="id" style="display: none;">2379665</span>
+      <span class="text name">lab2.cpp</span>
+    </li>
+    <li class="file  file file_2432298">
+      <span class="id" style="display: none;">2432298</span>
+      <span class="text name">lab3.cpp</span>
+    </li>
+    <li class="file  file file_2494728">
+      <span class="id" style="display: none;">2494728</span>
+      <span class="text name">lab4.cpp</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_327124">
+      <span class="id" style="display: none;">327124</span>
+      <span class="text name">Williamson, Introduction to Business Management</span>
+        
+<ul>
+    <li class="file  doc file_1213328">
+      <span class="id" style="display: none;">1213328</span>
+      <span class="text name">Lin - Personal SWOT Analysis.docx</span>
+    </li>
+    <li class="file  pdf file_1341963">
+      <span class="id" style="display: none;">1341963</span>
+      <span class="text name">LeilaLinProfile.pdf</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_352268">
+      <span class="id" style="display: none;">352268</span>
+      <span class="text name">Fall 2017 Anthropology 130 Section 001 Cultural Anthropology</span>
+        
+<ul>
+    <li class="file  doc file_1476483">
+      <span class="id" style="display: none;">1476483</span>
+      <span class="text name">Final Fact Sheet.docx</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_300852">
+      <span class="id" style="display: none;">300852</span>
+      <span class="text name">Fall 2017 Information Sciences 301 Section 001 Intro to Web Technologies</span>
+        
+<ul>
+    <li class="file  doc file_1081327">
+      <span class="id" style="display: none;">1081327</span>
+      <span class="text name">Lin Assignment 4 Worksheet.docx</span>
+    </li>
+    <li class="file  html file_1081328">
+      <span class="id" style="display: none;">1081328</span>
+      <span class="text name">linassignment4.html</span>
+    </li>
+    <li class="file  doc file_1265731">
+      <span class="id" style="display: none;">1265731</span>
+      <span class="text name">lin_Assignment 9.docx</span>
+    </li>
+    <li class="file  doc file_1354708">
+      <span class="id" style="display: none;">1354708</span>
+      <span class="text name">External Style Sheet Plan.doc</span>
+    </li>
+    <li class="file  html file_1470627">
+      <span class="id" style="display: none;">1470627</span>
+      <span class="text name">default.html</span>
+    </li>
+    <li class="file  html file_1470628">
+      <span class="id" style="display: none;">1470628</span>
+      <span class="text name">crepes.html</span>
+    </li>
+    <li class="file  html file_1470629">
+      <span class="id" style="display: none;">1470629</span>
+      <span class="text name">noodles.html</span>
+    </li>
+    <li class="file  html file_1470630">
+      <span class="id" style="display: none;">1470630</span>
+      <span class="text name">gelato.html</span>
+    </li>
+    <li class="file  html file_1470631">
+      <span class="id" style="display: none;">1470631</span>
+      <span class="text name">sushi.html</span>
+    </li>
+    <li class="file  code file_1470632">
+      <span class="id" style="display: none;">1470632</span>
+      <span class="text name">foodstyle.css</span>
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_238827">
+      <span class="id" style="display: none;">238827</span>
+      <span class="text name">conversation attachments</span>
+        
+<ul>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_109365">
+      <span class="id" style="display: none;">109365</span>
+      <span class="text name">profile pictures</span>
+        
+<ul>
+    <li class="file  image file_1396859">
+      <span class="id" style="display: none;">1396859</span>
+      <span class="text name">profilePic.jpg</span>
+    </li>
+    <li class="file  image file_1396860">
+      <span class="id" style="display: none;">1396860</span>
+      <span class="text name">profilePicF4314AAC-D565-4ACA-98E7-A111D785081E-2314-000002842D5626D0.jpg</span>
+    </li>
+    <li class="file  image file_1396866">
+      <span class="id" style="display: none;">1396866</span>
+      <span class="text name">profilePic74D74809-4835-458B-AA78-7B25B6BA702A-2314-00000284B57260BA.jpg</span>
+    </li>
+    <li class="file  image file_1396868">
+      <span class="id" style="display: none;">1396868</span>
+      <span class="text name">profilePic24F187AD-91A3-4E36-B836-653E342B04CB-2314-00000284CCB12A1F.jpg</span>
+    </li>
+    <li class="file  image file_1396871">
+      <span class="id" style="display: none;">1396871</span>
+      <span class="text name">profilePic87E9CBDC-63B6-4A03-9F10-787A44F1F57C-2314-00000285185AC964.jpg</span>
+    </li>
+    <li class="file  image file_1396874">
+      <span class="id" style="display: none;">1396874</span>
+      <span class="text name">profilePic2F133902-B79C-430A-9018-74D5E678CAFB-2314-000002854B4890D3.jpg</span>
+    </li>
+    <li class="file  image file_1396892">
+      <span class="id" style="display: none;">1396892</span>
+      <span class="text name">profilePicC3A1C7AD-E16F-48AB-8AD9-8F94FD39B496-2339-000002864FA21F50.jpg</span>
+    </li>
+    <li class="file  image file_1396905">
+      <span class="id" style="display: none;">1396905</span>
+      <span class="text name">profilePicC756854C-686E-47A2-8963-FA28B428E492-2352-00000286FE6CD6A3.jpg</span>
+    </li>
+    <li class="file  image file_1396909">
+      <span class="id" style="display: none;">1396909</span>
+      <span class="text name">profilePicB507D74D-75BD-4600-9A59-002992B140CF-2352-0000028725689705.jpg</span>
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment">
+</textarea>
+        </td>
+      </tr>
+      
+
+      
+
+      <tr>
+        <td colspan="2" class='button-container'>
+          <button type="button" class='cancel_button btn'>Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+        </td>
+      </tr><tr style="display: none;">
+        <td colspan="2" style="text-align: center;">
+          Submitting... <img src=""/>
+        </td>
+      </tr>
+    </table>
+    </form>
+
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+        <div id="submit_google_doc_form">
+          Before you can submit assignments directly from Google Drive you need to authorize Canvas to access your Google Drive account:
+          <div style="font-size: 1.1em; text-align: center; margin: 10px;">
+            <a class="btn" href="https://utk.instructure.com/oauth?return_to=https%3A%2F%2Futk.instructure.com%2Fcourses%2F57810%2Fassignments%2F311477%3Fmodule_item_id%3D626091%23submit_google_doc_form&amp;service=google_drive">Authorize Google Drive Access</a>
+          </div>
+        </div>
+
+
+      <div id="submit_from_external_tool_form_1509" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_1299" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_1300" style="padding: 5px 5px 0 5px;"></div>
+
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment"/>
+      <input type="hidden" name="rubric_association[association_id]" value="311477"/>
+      <input type="hidden" name="rubric_association[purpose]" value="grading"/>
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id='rating_form_score_label' class="rating_form_label">Rating Score</label></div>
+        <span id='rating_form_max_score_label' hidden>Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1" />
+        <span class="range_rating">to >
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min"/>
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description"/>
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div
+  class="rubric_container rubric  "
+  id="default_rubric"
+  style="display: none;"
+  tabindex="0"
+>
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a
+        href="/courses/57810/rubrics/%7B%7B%20id%20%7D%7D"
+        class=" edit_rubric_link no-print no-hover"
+        style=""
+        title="Edit Rubric"
+        aria-label="Edit Rubric"
+        role="button"
+      ><i class="icon-edit standalone-icon"></i></a>
+      <a
+        href="https://utk.instructure.com/search/rubrics?q="
+        class="find_rubric_link no-print no-hover"
+        style=""
+        title="Find Another Rubric"
+        aria-label="Find Another Rubric"
+        role="button"
+      ><i class="icon-search standalone-icon"></i></a>
+        <a
+          href="/courses/57810/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D"
+          class="delete_rubric_link no-print no-hover"
+          style=""
+          title="Delete Rubric"
+          aria-label="Delete Rubric"
+          role="button"
+        ><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+        <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="/courses/57810/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="/courses/57810/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="/courses/57810/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can&#39;t change a rubric once you&#39;ve started using it.</span>
+        <a href="/courses/57810/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://utk.instructure.com/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:"/>
+      <a href="https://utk.instructure.com/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/find-6164443e2a.png" /> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You&#39;ve already rated students with this rubric.  Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range" /></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tr>
+          <td id="rating_blank"
+              class="rating edge_rating
+                
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2"
+              class="rating edge_rating
+                infinitesimal
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input
+              type="text"
+              aria-label="Points"
+              value="5"
+              class="criterion_points span1 no-margin-bottom"
+            />
+           pts
+      </span><br />
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br />
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/rubric_comment-ddae8546ab.png" />
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points "
+        style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating" />
+          <label for="rubric_custom_rating">I&#39;ll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox" />
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox" />
+            <label for="hide_outcome_results">Don&#39;t post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" />
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox" />
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+
+  
+  <div id="sequence_footer" data-course-id="57810" data-asset-id="311477" data-asset-type="Assignment"></div>
+
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">48a665fa-d1cd-49fc-8044-a73ea3e651b4</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  
+
+<script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"fms-prod.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"googleAnalyticsAccount":"UA-9138420-1","logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"YouTube","id":69,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600},{"name":"TEDEd","id":124,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube_ted_ed","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/ted_ed_icon.png","canvas_icon_class":null,"width":560,"height":600},{"name":"Slideshare","id":125,"url":"https://www.edu-apps.org/tool_redirect?id=slideshare","icon_url":"https://www.edu-apps.org/tools/slideshare/icon.png","canvas_icon_class":null,"width":690,"height":530},{"name":"Vimeo","id":126,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=vimeo","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/vimeo_icon.png","canvas_icon_class":null,"width":560,"height":600},{"name":"Twitter","id":127,"url":"https://www.edu-apps.org/twitter_lti/","icon_url":"https://www.edu-apps.org/assets/inst_lti_twitter/icon.png","canvas_icon_class":null,"width":475,"height":490},{"name":"Khan Academy","id":128,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=khan_academy","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/khan_academy_icon.png","canvas_icon_class":null,"width":560,"height":600},{"name":"MERLOT","id":129,"url":"https://www.merlot.org/merlot/lti.htm","icon_url":"https://www.merlot.org/merlot/images/merlot_lti.gif","canvas_icon_class":null,"width":590,"height":450},{"name":"USA Today","id":144,"url":"https://www.edu-apps.org/tool_redirect?id=usa_today","icon_url":"https://www.edu-apps.org/tools/usa_today/icon.png","canvas_icon_class":null,"width":690,"height":530},{"name":"Google Apps","id":1299,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","canvas_icon_class":null,"width":700,"height":600},{"name":"Microsoft Office 365","id":1300,"url":"https://office365-iad-prod.instructure.com/lti/rce-content-item","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","canvas_icon_class":null,"width":900,"height":600},{"name":"ARC","id":1509,"url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select","icon_url":"https://utk.instructuremedia.com/lti/tweed16x16.png","canvas_icon_class":null,"width":560,"height":600}]};
+  ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/b4cf24ea5f2824fe473a9e5238bccd2f/variables-750d72b9d3e5d522f965bf904110c132.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/b4cf24ea5f2824fe473a9e5238bccd2f/variables-750d72b9d3e5d522f965bf904110c132.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-53dac18d10.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-750d72b9d3e5d522f965bf904110c132.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-b4d65fe883.css"],"current_user_id":"63006","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"cluster95-files.instructure.com","DOMAIN_ROOT_ACCOUNT_ID":76410000000000001,"k12":false,"use_responsive_layout":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *"],"SETTINGS":{"open_registration":false,"eportfolios_enabled":true,"collapse_global_nav":true,"show_feedback_link":true,"enable_profiles":true},"current_user":{"id":"63006","display_name":"Leila Lin","avatar_image_url":"https://utk.instructure.com/images/messages/avatar-50.png","html_url":"https://utk.instructure.com/about/63006"},"page_view_update_url":"/page_views/48a665fa-d1cd-49fc-8044-a73ea3e651b4?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNDhhNjY1ZmEtZDFjZC00OWZjLTgwNDQtYTczZWEzZTY1MWI0IiwidSI6NzY0MTAwMDAwMDAwNjMwMDYsImMiOiIyMDE4LTA5LTIyVDE2OjQ0OjI0LjYzWiJ9.4-M8yYun4AXscDvYcai6iaWWaeAR3CzVFqkkAGs6GJQ","context_asset_string":"course_57810","ping_url":"https://utk.instructure.com/api/v1/courses/57810/ping","TIMEZONE":"America/New_York","CONTEXT_TIMEZONE":"America/New_York","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","RICH_CONTENT_SERVICE_ENABLED":true,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","RICH_CONTENT_CDN_HOST":"dvgcns7dz7zc.cloudfront.net/rce_service/versions/","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi5neTV0ZGtiUUlKV3FwUHFsLllkSFJzLXZNc0wwSmFxNm5JRHRyNWExN1RNUFhWS2NvcFFEMDNqMF8xcC0zNGFpTkFjd1RSNW1IdVE2aVU3VXpUa3hMRTFIR1N6WmlQQkZ4aFY2c0lPN0NxM296MnI0dU9EbUc3YVdGRWxTaWJQTjJJM3dONXNWQmVvRlEycmdEd1NrRFA0d1F4Vm91U0k5S2xySlNJd0RlY2RfZjBCSkYwTUlPcFFkVkFaU0FYZ204QkN2cXh2UjE0V3pZWkpNUGJKQXBheHM5c2xUb3Y1ay02eFVHeWUwZVJObFg3eXp6TVJrZkxqejFDWmFuYUR1LXl5ajVIZlVHY0RPX2xGaWxRSldJeGpPd1kwcHYxeFdzU285NWFnblRaX09aNTlMLTRfZ195MHZMT3I0ME1GZ3pia3g2QUxxU1VmSzYwNEQtTS1aTWhYSjBUaEtpYjQzWHg4SkUyM0EwUnRwamFlYjFYbXpNSGd0WTdCUDh4bDFDZWQ1dTRsSFkzdG9XdWMzWkV0dTA0MUpJdXhyTjREMDlLNWUxbndCMWdwNzFpQTRXS1NPRXZINXVqazVYNG10NWNMYUszX1ZVei0wcTgzMlpqNm1OYzlTczdDRzNpakNyU0t5bnNuci1QTUVLZWtsa2NNWEtmZGRCaGRiTHhBTk5NNGFzNXgzUzB4b2VBZC1NbWxKandzWGFaY0RUU2FjM21BdDRyQzBCWkltcE5xMEZ2YnZmNGk1YmFNTmt3YjVERkFzQmZiRk1CcE5QU01ZaHJKSGNLSlU2R1hSbE8tODdvdVUzdlBNTVNPRnpZZ0ZwVWxPOWlmcnlSNThDd2h2NktXLTg0bU9HZ3J1X0M0YXMzRWRoTnRwdkI5Tl9jQnVCRDQweFVFZ2Ffc2gxTm90Tm53S3oxTEFhUURrc3hIZnlkTGZBLTNlamFNRWZQZy1hdUYyWm5lalZ1Uk96aU5tLTJKV0tfRDBDWEdYUmZwUmZHVmtYNmlEOXdlWDYtSzEyN1N4V1F0akwyMzE4ZWNnSXlRZjlJZHM1WGl0LXNpcmNlVEFpRGt2WGVEV082YnZORGV2cUVtby54UUg2Z0dQcEFKbGFSaXREaTZrWmhR","RICH_CONTENT_CAN_UPLOAD_FILES":false,"ROOT_OUTCOME_GROUP":{"id":"51799","title":"Fall 2018: Introduction to Computer Science","vendor_guid":null,"url":"/api/v1/courses/57810/outcome_groups/51799","subgroups_url":"/api/v1/courses/57810/outcome_groups/51799/subgroups","outcomes_url":"/api/v1/courses/57810/outcome_groups/51799/outcomes","can_edit":false,"import_url":"/api/v1/courses/57810/outcome_groups/51799/import","context_id":"57810","context_type":"Course","description":null},"COURSE_ID":57810,"ASSIGNMENT_ID":311477,"EXTERNAL_TOOLS":[{"id":"1509","domain":"arc.instructure.com","url":"https://utk.instructuremedia.com/lti/launch","consumer_key":"769-115fc40e092aa088b40e2f6a89f321e133cb4b01089794c06b97e9f6cffdd15e","name":"ARC","description":"Video for Education","created_at":"2018-07-13T19:15:43Z","updated_at":"2018-07-13T19:15:43Z","privacy_level":"name_only","custom_fields":{"avatar":"$User.image","course_id":"$Canvas.course.id","email":"$Person.email.primary","high_contrast":"$Canvas.user.prefersHighContrast","login_id":"$Canvas.user.loginId","name":"$Person.name.full"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_menu":null,"assignment_selection":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"text":"Arc","url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=course_nav","visibility":"admins","label":"Arc","selection_width":560,"selection_height":600},"course_settings_sub_navigation":null,"discussion_topic_menu":null,"editor_button":{"icon_url":"https://utk.instructuremedia.com/lti/tweed16x16.png","message_type":"ContentItemSelectionRequest","url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select","label":"ARC","selection_width":560,"selection_height":600},"file_menu":null,"global_navigation":{"display_type":"full_width","icon_svg_path_64":"M32,15.6655048 C33.4133667,18.570766 35.1996806,21.2316327 37.3050045,23.6338337 C35.753956,26.1002552 33.9885783,28.4007739 32,30.5086313 C30.0110669,28.4007739 28.2456891,26.1002552 26.6946407,23.6338337 C28.7999645,21.2316327 30.5866333,18.570766 32,15.6655048 L32,15.6655048 Z M0,52 C12.0837002,52 23.1865955,47.7796471 32,40.7703433 C40.8130496,47.7796471 51.915945,52 64,52 L64,44.458737 C54.1025294,44.458737 45.0506659,41.0546971 37.6744031,35.5092626 C39.6005278,33.4442188 41.3925193,31.252518 42.9669879,28.8934874 C48.8833986,33.2619041 56.1134632,35.9263386 64,35.9263386 L64,28.3850756 C57.4406015,28.3850756 51.474157,26.0296128 46.6755231,22.2402503 C44.5315206,20.5473283 42.600428,18.6057304 41.0188625,16.368005 C37.7425343,11.7320032 35.7724082,6.10557949 35.7724082,0 L28.2272369,0 C28.2272369,6.10557949 26.2571109,11.7320032 22.9807827,16.368005 C21.3992171,18.6057304 19.4681245,20.5473283 17.324122,22.2402503 C12.5254882,26.0296128 6.55904368,28.3850756 0,28.3850756 L0,35.9263386 C7.88618193,35.9263386 15.1162466,33.2619041 21.0330121,28.8934874 C22.6074807,31.252518 24.3994722,33.4442188 26.325242,35.5092626 C18.9489793,41.0546971 9.89747059,44.458737 0,44.458737 L0,52 L0,52 Z","text":"Arc","url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=global_nav","visibility":"members","label":"Arc","selection_width":560,"selection_height":600},"homework_submission":{"message_type":"ContentItemSelectionRequest","text":"Arc","url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select","label":"Arc","selection_width":560,"selection_height":600},"link_selection":null,"migration_selection":null,"module_menu":null,"post_grades":null,"quiz_menu":null,"resource_selection":{"message_type":"ContentItemSelectionRequest","title":"Arc","url":"https://utk.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select","label":"ARC","selection_width":560,"selection_height":600},"tool_configuration":null,"user_navigation":null,"wiki_page_menu":null,"selection_width":560,"selection_height":600,"not_selectable":false},{"id":"1299","domain":"google-drive-lti-iad-prod.instructure.com","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","consumer_key":"6d90375d-df05-485d-b178-cb38355a4b4d","name":"Google Apps","description":"Allows you to pull in documents from Google Drive to Canvas","created_at":"2018-03-16T19:29:10Z","updated_at":"2018-03-16T19:29:10Z","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_menu":null,"assignment_selection":{"message_type":"ContentItemSelectionRequest","text":"Google Docs Cloud Assignment","url":"https://google-drive-lti-iad-prod.instructure.com/lti/cloud-template-selection","label":"Google Docs Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"collaboration":{"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/collaboration-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","label":"Google Drive","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"course_settings_sub_navigation":null,"discussion_topic_menu":null,"editor_button":{"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","label":"Google Apps"},"file_menu":null,"global_navigation":null,"homework_submission":{"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/homework-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/module-content-selection","label":"Google Drive","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"migration_selection":null,"module_menu":null,"post_grades":null,"quiz_menu":null,"resource_selection":null,"tool_configuration":null,"user_navigation":null,"wiki_page_menu":null,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","not_selectable":false},{"id":"1300","domain":"office365-iad-prod.instructure.com","url":"https://office365-iad-prod.instructure.com/lti/course-navigation","consumer_key":"c5fa4160-67e0-4022-a6eb-b4ed20f4d98f","name":"Microsoft Office 365","description":"Allows you to pull in documents from Office 365 to Canvas","created_at":"2018-03-16T20:14:37Z","updated_at":"2018-03-20T21:59:25Z","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","course_id":"$Canvas.course.id","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_menu":null,"assignment_selection":{"message_type":"ContentItemSelectionRequest","text":"Office 365 Cloud Assignment","url":"https://office365-iad-prod.instructure.com/lti/cloud-assignment-template","label":"Office 365 Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"collaboration":{"canvas_icon_class":"icon-lti","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/collaboration-content-item","label":"Office 365","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/course-navigation","label":"Office 365","selection_width":800,"selection_height":400,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"course_settings_sub_navigation":null,"discussion_topic_menu":null,"editor_button":{"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":900,"url":"https://office365-iad-prod.instructure.com/lti/rce-content-item","label":"Microsoft Office 365"},"file_menu":null,"global_navigation":null,"homework_submission":{"canvas_icon_class":"icon-lti","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/homework-submission-content-item","label":"Office 365","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":900,"text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/module-content-item","label":"Office 365","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"migration_selection":null,"module_menu":null,"post_grades":null,"quiz_menu":null,"resource_selection":null,"tool_configuration":null,"user_navigation":null,"wiki_page_menu":null,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","not_selectable":false}],"EULA_URL":null,"CONDITIONAL_RELEASE_SERVICE_ENABLED":true,"CONDITIONAL_RELEASE_ENV":{"jwt":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi40cDJDLUZIZVRhWUlDR0JkLjFzTTdMMlJneGYycm9GZk05d3hZTGtMd3ZrcWhuTEVmTWhqaHZCa0QwT1pUY2YxVDNYb3ZOZUJWVUE3ZjRmbURBd1pPR0IyQnFQQV92UkZlTWd0QUQ1d3RGSGlMLXJCUFhMaXRsV0U3LUJMbUgwOG1lQ25FdGJxWm81Vmx2bWZpWEFiLTNoWmhIdk1KVXlwcEYwbjVuRXRjNnN3d0JrN1ZMamRtTElIcDdyOEtHVmE2QU5FenNQb0FNSkREOUZ1dXRRV0w4Um1qQlpiaS11Z3Y3S0VqNG9VZVc2NkRNaHA0UDM2SVF3bmFNWHlDbUpGcjN0OUFBenBNUTNGMHV0SmlfZ2NtaUFPMWtRVEZpQ2xrbElyQWYyOEJEdGRyd1BKR0xGNy1fTXpPc3NwQlJwTE84OG5haTd1X0pYcnRYN0poYXdhS2l1LWtHS1dyQ210a0IzWUNkeDFTVUJTZjFuTFhVN3VMa0hEUmFzUy1rZlJMZVFmYTlUWG9PQlNveEc3YUpSWG52Qm9CXzlLZ2gtbUpzdk9feFQzbHFmVlctQ0Jid1NYNm1BRUtFUGVlY0FEMWtRLTR1NkNHaDljVE0tSkJqeW8zZkhPc3RlNXVqbXN6TnpBb3FZZnctNDhnRHZYblFoal9MemdxMURXVWdfUFhRejcxVk5Fb2dyb3VOSWJRZkFZcTRYVGV0MDg0ejZ2Y2dRd1VjclZpczNtcUk2ekExVlU4bEEzRl9LV3I2RjR5THFmRF94aTg5QmJaWmpMTkdWT1Yzbk0tNWxZUzcwaHh6bU5aUDRUemk4MWl4aW9vODdLX2NxRE1Nd0JrQm5UWElxWDhCa3ZYUHZNTlVZV3MxTVVTTmNuMXZEOUtVSEZVQ3lEcEdwXzlfMl82bGFYNWFoVlpPYXBhWm9TTXZrb3h2RUVCaHBGQlpCWE1LbjVOQ0xEMjFOcDJzczBQbmxBX0ozT1VwaXNJb2t6X0xxWE1WdXE4SEtkdWxZVzhoWjlhWkNpQV8ydWJLQ1FJMk0wMFB5U2JnZ3Y2ZmJBakFONXFYbGF3WmlKcndPOElQWi1MQTJJS2c3bWl3TEVwVGhaSkdSeTRSd1FueHdaOGlQSjZXX2VSNHR1bmg2ODJkWUFPYTVOMzVnVl81ZVQwQXVYQVRxNmNjUXJRem80andWOXZCd3M4WnMyYVhnNjNESjNqNVdfcGRVRHVnSFdqcXkyVkxTN2ZlcjJXOXNQc2J0c29XVm1mWDlQWUo5LXhTaEpBYlFmOUFEbWNvUjl1QWFpdEx4alB3ZTVHd0NhdEJuODU1b2pnSWhKSHVyNElTeWhpS2lXWWxMdG9OQ0tyQXNqQVFDQjZtdGhsLUVXc1RlMWFmR2pudVBvU0VsV1BvRW1SeEtrNVZWWE1sRmQ5UFJsa2lib29NcWZEdWIyNlQ0M1RQZUZOSllyYkd3OWpLczRpRVNEZGxCVHA5WDVySGtUWDV2RXNuN3RBTzVtTDQzRVMyWUF3SkpGN0NmbEhENi1XM1h1YzN2VzctNFkwbXF1SWVBOVo0R3Fta0ZyTTdyR1I0Rm1OeVJ3OFRDY2dlY0drQm9GOUxTemI4dU5HSnBoYVZlYnZLVGtYdEhJcVNMMDYzMnNxMjJsaEZIMTlRa3J0WFBnd3BIeS1OdFdCVUViUWI2Z25TSm1NS1N4aEszcEpXbGpfVzMzN3NjZEZmdEp2STNTMUM5SmtkSmEyd01GUVJBeEp6T21QMmJicURWVFMzTVJyTTkxV1ZVbzg2d1dNNUpvMUlwYmJuTmptRmNVRDc1TkV5ZGpKWTRvSnRFOTYxRFlLUkc0QnhZd1JoeExHeFdZUEpNTjRzWG84SVBCcWszd192clNGVTNpd3BPbm11OHJKbVltOHVveE83MVNTeUNteXBUblR2U0l0SkY3TFY1SUFTWUZFTjBPdS1oUXlaV09IWnk0Z3dRUzN1X2FpdHZEMnQtTXdOTy04ODFKU0VrZlY3QVVYTDdHMEpyelhvLTdUaTRvQzAtX3pXTFh5dzE3ZkpodW84NlNqcjQ3MHQ1aEliZUxONElMbkZocDhyX0JhSmhRa0NKSERPQVBJYm8xcGhiS0hLb2xRSHU5V202TmFkMzNuYU56NTNJREp4Z2JtanhrN3dRM3NobmpXODZOVGp5LVdNSEREVEgtMnJDd0xjbl96ZHpUZkF3RDJvUFRiTmx2VFczZWxyNlV6aXpZQ09ia1EyUnBlUjhEUU4waEM2T3dLV28tODk5RnJicDdWQlZVRzh1TXVWNXhGQVd6VmUxa3h5ZTRERk9Iel9RNUlmU09LblRQTkh3ZUlhSGUxZlZnTkJiQmI3X042WDdyUEhBajJuMjVJQWFVanNKWE9iWXpHdE8xUHdWVlNqVkZncGlXYy05R3ppLTYzNENNd2dKSnJiZERfWWpvb2tSWDVHU3R6RjhnU1VScmQybTZlaVBaQzU5YzZRWS1ocnp0cEUzMF82Zy1VdVNYMUhvM19HRXdDeGtCTldHcG1ocXlDVTBWNHZEd25acFFwNTExVkxmWHJ1bXpna0Fib2JTajQ3UElpa0otOV9ZYVJHTFdxUmJ1ZFdULTNnaXNhOThkdlFYSEhGTlBMcTZLREVlOXlGRFU2Q29uV3U4bU1tMkxrb3QwME5UcFN5ODRTRzBwZWtKLTZ4aUlJMnZvY0RpZXAzZF84LTVrVTNVdUROeU1jTEJ2M0lmUnlxNVhCTmJsWVBuUjhYVm9GZTZ2ZDY3X0JWNmpJY25RSEVKYzR6Y0VHZi16enh3SFhxM3YteDJxV01OeEJOdlNtVHM3Q05lMEJpUVJxMld6aU9CYzBURjhoTVVtcG9Kcm9wRmJVSEd3U3UzdEoya3I4aFE4LkdCb1htcEQ4YW9LMUhxZlU4Qk1kNVE=","assignment":{"id":"311477","title":"Lab 5","description":"\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003eAssignment\u003c/span\u003e\u003c/h2\u003e\r\n\u003cp\u003eYou will be writing a program to score bowling for several players. Your job will be to ask for players and their scores, then add up their score. When all players have been entered, the user will type \"done\". Then, your program will tally up the worst and best player and output who won and who lost the game.\u003c/p\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003eRestrictions / Hints\u003c/span\u003e\u003c/h2\u003e\r\n\u003cp\u003e1. You must use a \u003cstrong\u003evector\u003c/strong\u003e to store all of the player names. All player names will be a single name.\u003c/p\u003e\r\n\u003cp\u003e2. You must use another \u003cstrong\u003evector\u003c/strong\u003e to store the total score for each player. You must calculate the total score for each player after all rolls have been entered.\u003c/p\u003e\r\n\u003cp\u003e3. You must use an \u003cstrong\u003earray\u003c/strong\u003e to store each roll's value.\u003c/p\u003e\r\n\u003cp\u003e4. The number of rolls is variable depending on whether the player threw a strike (knocked down 10 pins in one roll), spare, or neither. Please see \"Scoring Bowling\" below.\u003c/p\u003e\r\n\u003cp\u003e5. You must use a for loop to input the roll values into the array.\u003c/p\u003e\r\n\u003cp\u003e6. If the user types \"done\" before entering any names, output \"No players were entered.\"\u003c/p\u003e\r\n\u003cp\u003e7. In the event of a tie, the first player to obtain the best or worst score should be printed.\u003c/p\u003e\r\n\u003cp\u003e8. You can assume that the user will input valid scores. You do not need to perform error checking for invalid input.\u003c/p\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003eScoring Bowling\u003c/span\u003e\u003c/h2\u003e\r\n\u003cp\u003ePlease see: \u003ca href=\"https://www.wikihow.com/Score-Bowling\"\u003ehttps://www.wikihow.com/Score-Bowling\u003c/a\u003e\u003c/p\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003eExamples\u003c/span\u003e\u003c/h2\u003e\r\n\u003cpre\u003eEnter player's name (done for no more players): John\r\nEnter score for frame 1, roll 1: 10\r\nEnter score for frame 2, roll 1: 10\r\nEnter score for frame 3, roll 1: 10\r\nEnter score for frame 4, roll 1: 10\r\nEnter score for frame 5, roll 1: 10\r\nEnter score for frame 6, roll 1: 10\r\nEnter score for frame 7, roll 1: 10\r\nEnter score for frame 8, roll 1: 10\r\nEnter score for frame 9, roll 1: 10\r\nEnter score for frame 10, roll 1: 10\r\nEnter score for frame 10, roll 2: 10\r\nEnter score for frame 10, roll 3: 10\r\nEnter player's name (done for no more players): Cheryl\r\nEnter score for frame 1, roll 1: 8\r\nEnter score for frame 1, roll 2: 1\r\nEnter score for frame 2, roll 1: 0\r\nEnter score for frame 2, roll 2: 9\r\nEnter score for frame 3, roll 1: 2\r\nEnter score for frame 3, roll 2: 8\r\nEnter score for frame 4, roll 1: 10\r\nEnter score for frame 5, roll 1: 6\r\nEnter score for frame 5, roll 2: 3\r\nEnter score for frame 6, roll 1: 7\r\nEnter score for frame 6, roll 2: 0\r\nEnter score for frame 7, roll 1: 5\r\nEnter score for frame 7, roll 2: 2\r\nEnter score for frame 8, roll 1: 10\r\nEnter score for frame 9, roll 1: 0\r\nEnter score for frame 9, roll 2: 6\r\nEnter score for frame 10, roll 1: 2\r\nEnter score for frame 10, roll 2: 8\r\nEnter score for frame 10, roll 3: 10\r\nEnter player's name (done for no more players): done\u003cbr\u003e\r\nJohn scored 300.\r\nCheryl scored 122.\r\nCheryl did the worst by scoring 122.\r\nJohn won the game by scoring 300.\r\n\u003c/pre\u003e\r\n\u003cpre\u003eEnter player's name (done for no more players): done\r\nNo players were entered.\u003c/pre\u003e\r\n\u003cpre\u003eEnter player's name (done for no more players): John\u003cbr\u003eEnter score for frame 1, roll 1: 8\u003cbr\u003eEnter score for frame 1, roll 2: 1\u003cbr\u003eEnter score for frame 2, roll 1: 0\u003cbr\u003eEnter score for frame 2, roll 2: 9\u003cbr\u003eEnter score for frame 3, roll 1: 2\u003cbr\u003eEnter score for frame 3, roll 2: 8\u003cbr\u003eEnter score for frame 4, roll 1: 10\u003cbr\u003eEnter score for frame 5, roll 1: 6\u003cbr\u003eEnter score for frame 5, roll 2: 3\u003cbr\u003eEnter score for frame 6, roll 1: 7\u003cbr\u003eEnter score for frame 6, roll 2: 0\u003cbr\u003eEnter score for frame 7, roll 1: 5\u003cbr\u003eEnter score for frame 7, roll 2: 2\u003cbr\u003eEnter score for frame 8, roll 1: 10\u003cbr\u003eEnter score for frame 9, roll 1: 0\u003cbr\u003eEnter score for frame 9, roll 2: 6\u003cbr\u003eEnter score for frame 10, roll 1: 2\u003cbr\u003eEnter score for frame 10, roll 2: 8\u003cbr\u003eEnter score for frame 10, roll 3: 10\u003cbr\u003eEnter player's name (done for no more players): done\u003cbr\u003e\u003cbr\u003eJohn scored 122.\u003cbr\u003eJohn did the worst by scoring 122.\u003cbr\u003eJohn won the game by scoring 122.\u003c/pre\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003e\u003c/span\u003e\u003c/h2\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003ePlagiarism\u003c/span\u003e\u003c/h2\u003e\r\n\u003cp\u003ePlease review the \u003ca title=\"Syllabus\" href=\"/courses/57810/assignments/syllabus\"\u003eplagiarism policy on the syllabus\u003c/a\u003e.\u003c/p\u003e\r\n\u003ch2\u003e\u003cspan style=\"text-decoration: underline;\"\u003eSubmission\u003c/span\u003e\u003c/h2\u003e\r\n\u003cp\u003eSubmit your lab5.cpp. This MUST compile, or it will not be graded.\u003c/p\u003e","points_possible":100.0,"grading_type":"points","submission_types":"online_upload","grading_scheme":null},"stats_url":"https://conditional-release-iad-prod.instructure.com/stats","locale":"en","editor_url":"https://conditional-release-iad-prod.instructure.com/javascripts/generated/conditional_release_editor.bundle.js","base_url":"https://conditional-release-iad-prod.instructure.com/","context_id":"57810","rule":null},"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":["cpp"],"ID":311477,"GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":0},"notices":[]};
+</script>
+
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/navigation_header.bundle-21a7d3ba13.js" defer="defer"></script>
+
+
+</div> <!-- #application -->
+</body>
+</html>
