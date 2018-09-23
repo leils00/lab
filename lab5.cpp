@@ -29,7 +29,7 @@ int main(){
         for (int i=1; i<21; ++i){ // a for loop as required to take all input
             cout <<"Enter score for frame "<<frame<<", roll "<<roll<<": ";
             cin >> score;
-            while(!cin){ // check whether the input is an integer
+            /*while(!cin){ // check whether the input is an integer
                 cout << "Please input an integer: ";
                 cin.clear(); // clear the input stream, basically delete the fetched value
                 cin.ignore(256,'\n'); // Maximum number of characters to extract 256, stops extracting until new line '\n'
@@ -39,7 +39,7 @@ int main(){
                 cout << "Please input an integer between 1~10: ";
                 cin.clear(); // clear the input stream, basically delete the fetched value
                 cin >> score; // store the value in score
-            }
+            }*/ //We can assume that the user will input the right values; no need for error checking
             rolls[i] = score; // insert the score to the array
 
             if(score == 10){ // based on the rule of game, before frame 10, when the first hit is 10, bump the frame
